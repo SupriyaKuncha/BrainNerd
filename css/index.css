@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  --accent-color: #ff6b00;
+  --accent-grey: #878787;
+  --accent-darkGrey: #565656;
+  --accent-darkBlack: #343434;
+  --accent-border: 1px solid #000;
+  font-family: "Poppins", sans-serif;
+  --accent-light: white;
+  max-width: 100%;
+}
+/* for navigation bar */
+.nav {
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+}
+.flex-nav {
+  padding-top: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+.logo a {
+  color: var(--accent-darkBlack);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  margin-left: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  line-height: normal;
+}
+span {
+  color: var(--accent-color);
+}
+.genre {
+  text-align: center;
+  padding-top: 10px;
+}
+.genre a {
+  color: var(--accent-color);
+  margin-left: auto;
+  text-decoration: none;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.aboutUs {
+  margin-top: 10px;
+}
+.aboutUs a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--accent-color);
+  margin-right: auto;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.signup button {
+  border: 1px solid black;
+  background-color: var(--accent-light);
+  padding: 10px 33px 10px 33px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.signup {
+  position: relative;
+  left: 13%;
+}
+.signup a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.login button {
+  border-style: none;
+  background-color: var(--accent-color);
+  padding: 10px 35.5px 10px 35.5px;
+  font-size: 18px;
+  border-radius: 12px;
+  margin-right: 65px;
+}
+.login {
+  position: relative;
+}
+.login a {
+  text-decoration: none;
+  color: var(--accent-light);
+}
+
+/* home page content */
+/* .search {
+  padding-left: 20px;
+  display: block;
+  margin: 20px auto;
+  width: 750px;
+  height: 50px;
+  border-radius: 16px;
+  border: 2.889px solid rgba(0, 0, 0, 0.42);
+  background: #fff;
+} */
+.search {
+  /* display: flex;
+  justify-content: center;
+  width: 750px; */
+  margin: 20px auto;
+  width: 750px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.search-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--background-focus);
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.search-box {
+  z-index: 10;
+  padding-left: 20px;
+  display: block;
+  margin: 20px auto;
+  width: 95%;
+  height: 60px;
+  border-radius: 16px;
+  border: 2.889px solid rgba(0, 0, 0, 0.42);
+  background: #fff;
+
+  width: 95%;
+  padding: 10px 0;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  background-color: var(--background-dark);
+
+  /* border: 3px var(--accent-color-light) solid; */
+  border-radius: 15px;
+  color: var(--text-color-light);
+
+  font-weight: 500;
+  font-size: 15px;
+  text-indent: 15px;
+}
+
+.search-box:focus {
+  border-style: 3px var(--accent-color) solid;
+  background-color: var(--background-focus);
+}
+.list-book {
+  position: absolute;
+  height: 500px;
+  /* background-color: var(--accent-darkGrey); */
+  border-radius: 10px;
+  z-index: 1;
+  /* margin-top: -7.5px; */
+  padding-top: 75px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.list-book::-webkit-scrollbar {
+  display: none;
+}
+
+.book {
+  height: 150px;
+  width: 95%;
+  background-color: var(--background-books);
+  border-radius: 10px;
+}
+
+.home-content {
+  display: grid;
+  column-gap: 1px;
+  grid-template-columns: 57% 45%;
+  grid-template-rows: 10%;
+  padding: 10px 50px 50px 50px;
+}
+.heading {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+.content-img img {
+  width: 1090px;
+  height: 500px;
+}
+
+span.animated::before {
+  font-size: 35px;
+  color: var(--accent-color);
+  content: "Simplify";
+  animation: animated 7s infinite linear;
+}
+
+@keyframes animated {
+  0% {
+    content: "Simplify";
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    content: "Organize,";
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    content: "and Expand";
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    content: "Your Book Collection..";
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    content: "Simplify";
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.getStarted {
+  position: relative;
+  bottom: 100%;
+  left: 12%;
+  border-style: none;
+  background-color: var(--accent-color);
+  padding: 10px 35.5px 10px 35.5px;
+  font-size: 18px;
+  border-radius: 12px;
+  color: var(--accent-light);
+}
+.getStarted a {
+  text-decoration: none;
+  color: var(--accent-light);
+}
+.getStarted:hover {
+  transform: translateY(-6px);
+  transition: all ease-in-out 200ms;
+  /* padding: 12px 36.5px 12px 36.5px; */
+}
+
+.card-flex {
+  padding-left: 0px 20px 0px 17px;
+  display: grid;
+  grid-template-columns: 450px 450px ;
+  grid-template-rows: 47% 47%;
+  gap: 3%;
+  margin-left: auto;
+}
+.card-items {
+
+  display: flex;
+  flex-direction: row;
+  margin: 40px 20px 20px 30%;
+  width: 600px;
+  padding: 10px 0px 10px 10px;
+  height: 300px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.book-img {
+  border-radius: 18.969px;
+  width: fit-content;
+  height: 150px;
+}
+.description {
+  padding: 20px 20px 20px 20px;
+}
+.container {
+  padding-top: 20px;
+  display: grid;
+  column-gap: 25px;
+
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 40px 40px;
+}
+.bookName {
+  color: var(--accent-darkBlack);
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.author {
+  color: var(--accent-grey);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.description-title {
+  color: var(--accent-darkBlack);
+  font-size: 16px;
+  font-style: medium;
+  font-weight: 700;
+  line-height: normal;
+}
+.update {
+  color: var(--accent-darkGrey);
+  font-weight: 900;
+}
+.addToBag {
+  border-style: none;
+  color: var(--accent-light);
+  background-color: var(--accent-color);
+  padding: 10px 34px 10px 34px;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.wishlist-books {
+  margin-right: 70px;
+  padding-top: 10px;
+}
+.fa-heart {
+  color: var(--accent-color);
+  font-size: 27px;
+}
+.fa-heart:hover {
+  cursor: pointer;
+}

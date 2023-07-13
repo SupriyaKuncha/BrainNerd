@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  --accent-color: #ff6b00;
+  --accent-grey: #878787;
+  --accent-darkGrey: #565656;
+  --accent-darkBlack: #343434;
+  --accent-border: 1px solid #000;
+  font-family: "Poppins", sans-serif;
+  --accent-light: white;
+  max-width: 100%;
+}
+.cart-container {
+  margin-top: 40px;
+  width: 300px;
+  height: 400px;
+  margin-left: 70px;
+  width: 90%;
+  padding: 10px 0px 10px 0px;
+  height: 100%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.cart-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.cart-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.cart-books {
+  font-size: 26px;
+  margin-left: 25px;
+  padding-top: 10px;
+}
+.cart-books .check-box {
+  font-size: 15px;
+  text-align: left;
+  padding: 4px;
+  
+}
+.check-box {
+  font-family: 30px;
+  padding-left: 23.5px;
+}
+.wishlist-books {
+  margin-right: 70px;
+  padding-top: 10px;
+}
+.fa-heart {
+  color: var(--accent-color);
+  font-size: 27px;
+}
+.fa-heart:hover {
+  cursor: pointer;
+}
+
+/* 
+card contents
+  */
+  .quantity{
+    margin-top: 10px;
+  }
+  .quantity-dropbtn {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 17.332px;
+    border: 2.889px solid rgba(0, 0, 0, 0.42);
+    padding: 5px 20.5px 5px 20.5px;
+    font-size: 12px;
+  }
+  .dropdown-quantity {
+    display: none;
+    position: absolute;
+    background-color: var(--accent-light);
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-quantity li{
+    color: #333;
+    padding: 2px 6px;
+    list-style: none;
+    display: block;
+  }
+  
+  .dropdown-quantity li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .dropdown:hover .dropdown-quantity {
+    display: block;
+  }
+  .card-bottom{
+    display: flex;
+    /* margin-top: 40px; */
+    
+  }
+ .priceDetails{
+  display: flex;
+  flex-direction: column;
+ }
+ .price p{
+  font-size: 20px;
+ }
+  .delete button{
+    margin-top: 10px;
+    margin-left:20px ;
+    border-style: none;
+  color: var(--accent-light);
+  background-color: var(--accent-color);
+  padding: 12px 27.5px 12px 27.5px;
+  font-size: 14px;
+  border-radius: 12px;
+ 
+  }
+  .delete:hover, button:hover{
+    cursor: pointer;
+  }
+  .subtotal{
+    display: flex;
+
+  }
+  .subtotal-name{
+    margin-left: auto;
+    margin-right: 3px;
+    margin-bottom: 50px;
+    color: var(--accent-darkBlack);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .checkout-value{
+    margin-bottom: 50px;
+    margin-right: 100px;
+    font-size: 500;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  

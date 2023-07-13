@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  --accent-color: #ff6b00;
+  --accent-grey: #878787;
+  --accent-darkGrey: #565656;
+  --accent-darkBlack: #343434;
+  --accent-border: 1px solid #000;
+  font-family: "Poppins", sans-serif;
+  --accent-light: white;
+  max-width: 100%;
+}
+/* for navigation bar */
+.nav {
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+}
+.flex-nav {
+  display: grid;
+  grid-template-columns: 10% 9% 45% 2% 7% 10%;
+  /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+  column-gap: 3%;
+  grid-template-rows: 90%;
+  list-style: none;
+  padding-top: 20px;
+  /* padding-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between; */
+}
+.logo a{
+  color: var(--accent-darkBlack);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  margin-left: 40px;
+  font-weight: 900;
+  line-height: normal;
+  text-decoration: none;
+}
+span {
+  color: var(--accent-color);
+}
+.genre{
+  text-align: center;
+  padding-top: 10px;
+}
+.genre a{
+  
+  color: var(--accent-color);
+  margin-left: auto;
+text-decoration: none;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.aboutUs{
+  margin-top: 10px;
+}
+.aboutUs a{
+  text-decoration: none;
+  text-align: center;
+  color: var(--accent-color);
+  margin-right: auto;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cart button {
+  border: 1px solid black;
+  padding: 10px 33px 10px 33px;
+  font-size: 18px;
+}
+
+.profile a img {
+  padding: 0px 33px 3px 33px;
+}
+.profile a {
+  margin-bottom: 20p;
+}
+.logout button {
+  border-style: none;
+  background-color: var(--accent-color);
+  padding: 6px 39px 6px 39px;
+  font-size: 18px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.logout a {
+  text-decoration: none;
+  color: var(--accent-light);
+}
+.profile-1 {
+  justify-content: start;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 30px 30px 450px;
+  width: 650px;
+  padding: 10px 0px 10px 10px;
+  height: 200px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.profile-pic {
+  padding: 30px;
+}
+.profile-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+.description-title {
+  color: var(--accent-darkBlack);
+  font-size: 17px;
+  font-style: medium;
+  font-weight: 700;
+  line-height: normal;
+}
+.edit {
+  border-style: none;
+  color: var(--accent-light);
+  background-color: var(--accent-color);
+  padding: 10px 34px 10px 34px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+.profile-2 {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 50% 50%;
+  gap: 10%;
+  padding-left: 170px;
+}
+.mycards {
+  margin-left: 40px;
+  width: 300px;
+  padding: 10px 0px 10px 0px;
+  height: 50px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.mycards h3 {
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+}

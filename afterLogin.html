@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookNerd</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;1,700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1db4c77ee6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <ul class="flex-nav">
+          <li class="logo">
+            <a href="books.html">Book.<span>Nerd</span></a>
+          </li>
+          <li class="genre"><a href="genre.html">Genre</a></li>
+          <li class="aboutUs"><a href="#">About Us</a></li>
+          <li class="cart">
+            <a href="cart.html">
+              <img src="image/backpack-icon.svg" width:"40px" height="40px"
+              alt="Cart">
+            </a>
+          </li>
+          <li class="profile">
+            <a href="userDashboard.html">
+              <img
+                src="image/- 𝐈𝐂𝐎𝐍𝐒_•°__@𝙩𝙨𝙪𝙠𝙩𝙚𝙖ミ★,.jfif"
+                alt="profile"
+                width="50px"
+                height="50px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <input
+        type="search"
+        class="search"
+        placeholder="Search by name, author and genre"
+      />
+      <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          Filter
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 50 50"
+            fill="none"
+          >
+            <path
+              d="M14.5834 20.8333L25.0001 31.25L35.4167 20.8333"
+              stroke="#878787"
+              stroke-width="3.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Genre</a>
+          <a href="#">Author</a>
+          <a href="#">YOP</a>
+          <a href="#">Publish Date</a>
+        </div>
+      </div>
+    </div>
+    <div class="choose-flex">
+      <ul class="choosegenre-flex">
+        <!-- make the button highlight when clicked using js -->
+        <li><a class="highlight" href="#">All</a></li>
+        <li><a href="#" class="highlight">Romantic</a></li>
+        <li><a href="#" class="highlight">History</a></li>
+        <li><a href="#" class="highlight">Fiction</a></li>
+        <li><a href="#" class="highlight">Self-Help</a></li>
+      </ul>
+      <div class="cards-flex">
+        <div class="card-items">
+          <img src="image/dummy-mockuo.png" alt="book.png" class="book-img" />
+          <div class="description">
+            <h1 class="bookName">The Great Gatsby</h1>
+            <h2 class="author">F-Scott Fitzerald</h2>
+            <div class="container">
+              <div class="genre-name">
+                <span class="description-title">Genre:</span>
+                <span class="update" id="title-update">Romantic</span>
+              </div>
+              <div class="yop">
+                <span class="description-title">Yop:</span>
+                <span class="update" id="yop-update">2002</span>
+              </div>
+              <div class="available">
+                <span class="description-title">Available Copies:</span>
+                <span class="update" id="copies-update">25</span>
+              </div>
+              <div class="origin">
+                <span class="description-title">Origin:</span>
+                <span class="update" id="origin-update">Germany</span>
+              </div>
+            </div>
+            <button type="submit" class="addToBag">Add to Bag</button>
+          </div>
+          <div class="wishlist-books">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+        </div>
+        <div class="card-items">
+          <img src="image/dummy-mockuo.png" alt="book.png" class="book-img" />
+          <div class="description">
+            <h1 class="bookName">The Great Gatsby</h1>
+            <h2 class="author">F-Scott Fitzerald</h2>
+            <div class="container">
+              <div class="genre-name">
+                <span class="description-title">Genre:</span>
+                <span class="update" id="title-update">Romantic</span>
+              </div>
+              <div class="yop">
+                <span class="description-title">Yop:</span>
+                <span class="update" id="yop-update">2002</span>
+              </div>
+              <div class="available">
+                <span class="description-title">Available Copies:</span>
+                <span class="update" id="copies-update">25</span>
+              </div>
+              <div class="origin">
+                <span class="description-title">Origin:</span>
+                <span class="update" id="origin-update">Germany</span>
+              </div>
+            </div>
+            <button type="submit" class="addToBag">Add to Bag</button>
+          </div>
+          <div class="wishlist-books">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+        </div>
+        <div class="card-items">
+          <img src="image/dummy-mockuo.png" alt="book.png" class="book-img" />
+          <div class="description">
+            <h1 class="bookName">The Great Gatsby</h1>
+            <h2 class="author">F-Scott Fitzerald</h2>
+            <div class="container">
+              <div class="genre-name">
+                <span class="description-title">Genre:</span>
+                <span class="update" id="title-update">Romantic</span>
+              </div>
+              <div class="yop">
+                <span class="description-title">Yop:</span>
+                <span class="update" id="yop-update">2002</span>
+              </div>
+              <div class="available">
+                <span class="description-title">Available Copies:</span>
+                <span class="update" id="copies-update">25</span>
+              </div>
+              <div class="origin">
+                <span class="description-title">Origin:</span>
+                <span class="update" id="origin-update">Germany</span>
+              </div>
+            </div>
+            <button type="submit" class="addToBag">Add to Bag</button>
+          </div>
+          <div class="wishlist-books">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

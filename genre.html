@@ -6,6 +6,7 @@
     <title>BookNerd</title>
     <link rel="stylesheet" href="css/genre.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,11 +58,6 @@
       </ul>
     </div>
     <div class="main">
-      <!-- <input
-        type="search"
-        class="search"
-        placeholder="Search by name, author and genre"
-      /> -->
     
       <div class="search">
         <div class="search-div">
@@ -72,9 +68,7 @@
             placeholder="Search books by name, author, genre, etc ..."
           />
         </div>
-        <div class="list-book search">
-          <div class="cards-flex"></div>
-        </div>
+        <div class="list-book"></div>
       </div>
       <div class="dropdown">
         <button class="dropbtn">
@@ -103,38 +97,7 @@
         </div>
       </div>
     </div>
-    
-    <div class="cards-flex">
-      <div class="card-items">
-        <img src="image/dummy-mockuo.png" alt="book.png" class="book-img" />
-        <div class="description">
-          <h1 class="bookName">The Great Gatsby</h1>
-          <h2 class="author">F-Scott Fitzerald</h2>
-          <div class="container">
-            <div class="genre-name">
-              <span class="description-title">Genre:</span>
-              <span class="update" id="title-update">Romantic</span>
-            </div>
-            <div class="yop">
-              <span class="description-title">Yop:</span>
-              <span class="update" id="yop-update">2002</span>
-            </div>
-            <div class="available">
-              <span class="description-title">Available Copies:</span>
-              <span class="update" id="copies-update">25</span>
-            </div>
-            <div class="origin">
-              <span class="description-title">Origin:</span>
-              <span class="update" id="origin-update">Germany</span>
-            </div>
-          </div>
-          <button type="submit" class="addToBag">Add to Bag</button>
-        </div>
-        <div class="wishlist-books">
-          <a href="#"><i class="fa-solid fa-heart"></i></a>
-        </div>
-      </div>
-    </div>
+    <div class="cards-flex"></div>  
   <script src="js/books.js"></script>
   </body>
 </html>
